@@ -1,0 +1,24 @@
+.nav {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--display-font);
+    font-size: 1.25rem;
+}
+
+.navItemList {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .navItemList {
+        margin-top: 2rem;
+        justify-content: flex-start;
+    }
+}
+
+.activeNavItem {
+    font-weight: 600;
+}
