@@ -4,7 +4,7 @@ export default function About() {
     return <div className={styles.wrapper}>
         <img className={styles.profileImage} src="Dora_Do1_small.jpg" alt="Dora Do profile picture"/>
         <p>
-            Dora Do is a Creative Technologist based in Brooklyn, NY, exploring the intersection of technology and art.
+            Dora Do is a Creative Technologist, artist, and educator based in Brooklyn, NY, exploring the intersection of technology and art.
             Born and raised in Silicon Valley, Dora developed a deep passion for both fields from an early age. Starting
             her career in 2015, she has created software applications for major tech corporations such as Macy’s, Kodak,
             and Square, laying the foundation for her expertise in developing large-scale tech solutions. Since 2022,

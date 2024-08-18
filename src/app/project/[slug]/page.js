@@ -23,7 +23,7 @@ export default function ProjectsPage({ params }) {
                     <img className={styles.projectImage} src={`/assets/${project.imageUrl}`} alt={project.title}/>
                 </div>
             </div>
-            {project.sections.map((section, i) =>
+            {project.sections?.map((section, i) =>
                 <section key={i} className={styles.section}>
                     <h2 className={styles.sectionTitle}>{section.title}</h2>
                     {section.content}

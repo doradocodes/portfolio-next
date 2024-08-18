@@ -16,7 +16,7 @@ export default function CVPage() {
             <h3 id="work-experience" className={styles.sectionTitle}>Work Experience</h3>
             <div className={styles.subsection}>
                 {workExperience.map((job, i) =>
-                    <div className={styles.subsection}>
+                    <div className={styles.subsectionContent}>
                         <p className={styles.kicker}>{job.startYear} - {job.endYear}</p>
                         <p className={styles.subsectionTitle}>{job.title}<span
                             className={styles.pipe}>|</span>{job.company}</p>
@@ -50,9 +50,48 @@ export default function CVPage() {
             </div>
         </section>
 
-        {/*<section className={styles.section}>*/}
-        {/*    <h3>Grants</h3>*/}
-        {/*    */}
-        {/*</section>*/}
+        <section className={styles.section}>
+            <h3 id="grants" className={styles.sectionTitle}>Grants & Residencies</h3>
+            <div className={styles.subsection}>
+                <div className={styles.subsectionContent}>
+                    <p className={styles.kicker}>2024</p>
+                    <p className={styles.subsectionTitle}>pr05 Grant<span className={styles.pipe}>|</span> Processing Foundation</p>
+                    <p>Prototyping a Collaborative Code Editor For Processing</p>
+                    <p>New York, NY</p>
+                </div>
+
+                <div className={styles.subsectionContent}>
+                    <p className={styles.kicker}>2023 - 2024</p>
+                    <p className={styles.subsectionTitle}>Research Resident<span className={styles.pipe}>|</span> New
+                        York University</p>
+                    <p>New York, NY</p>
+                </div>
+            </div>
+        </section>
+
+        <section className={styles.section}>
+            <h3 id="teaching" className={styles.sectionTitle}>Teaching</h3>
+            <div className={styles.subsection}>
+                {/*<div className={styles.subsectionContent}>*/}
+                {/*    <p className={styles.kicker}>2024 - Current</p>*/}
+                {/*    <p className={styles.subsectionTitle}>Web Production 2<span className={styles.pipe}>|</span> Hunter*/}
+                {/*        College</p>*/}
+                {/*    <p>New York, NY</p>*/}
+                {/*</div>*/}
+
+                {/*<div className={styles.subsectionContent}>*/}
+                {/*    <p className={styles.kicker}>2024</p>*/}
+                {/*    <p className={styles.subsectionTitle}>Interactive Web: Intro to HTML, CSS, and JavaScript<span className={styles.pipe}>|</span> SVA</p>*/}
+                {/*    <p>New York, NY</p>*/}
+                {/*</div>*/}
+
+                <div className={styles.subsectionContent}>
+                    <p className={styles.kicker}>2023 - 2024</p>
+                    <p className={styles.subsectionTitle}>Teaching Assistant<span className={styles.pipe}>|</span> New
+                        York University</p>
+                    <p>New York, NY</p>
+                </div>
+            </div>
+        </section>
     </div>
 }

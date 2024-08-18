@@ -1,6 +1,9 @@
 import styles from './projects.module.css';
 
 export const creativeProjects = {
+    // 'The Un-networked Camera': {
+    //
+    // },
     'merging-worlds': {
         name: 'Merging Worlds: bridging analog and digital photography (2023)',
         imageUrl: 'thesis_cover.jpg',
@@ -490,6 +493,17 @@ export const creativeProjects = {
 };
 
 export const professionalProjects = {
+    'processing-collaborative-editor': {
+        name: 'Processing Collaborative Editor',
+        imageUrl: 'processing-collab-editor.png',
+        github: "https://github.com/doradocodes/processing-collab-editor",
+        summary: <p>
+            With the Processing Foundation, this project is aimed to create a collaborative editor for the Processing Java library.
+        </p>,
+        section: [
+
+        ]
+    },
     'square': {
         name: 'Square',
         imageUrl: 'square_1.png',
