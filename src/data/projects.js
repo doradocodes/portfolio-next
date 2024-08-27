@@ -1,9 +1,65 @@
 import styles from './projects.module.css';
 
 export const creativeProjects = {
-    // 'The Un-networked Camera': {
-    //
-    // },
+    'unnetworked-camera': {
+        name: 'The Un-networked Camera (2024)',
+        imageUrl: 'eink_camera_00002.jpg',
+        summary: <p>
+            The Un-networked Camera is the next series of the Digital-Analog Camera project. Mimicking a Polaroid
+            camera, the Un-networked Camera is a digital camera that prints photos on an e-ink screen.
+        </p>,
+        sections: [
+            {
+                title: 'Background',
+                content: <div>
+                    <p>
+                        E-ink has always been a really interesting and exciting technology for me, ever since I saw a
+                        Kindle for the first time. The matte quality really captured the essence of paper, which was so
+                        different from all other kinds of devices at the time. It took me a long time before I was able
+                        to have enough money to acquire my own Kindle, and I was obsessed with it. From my original
+                        thesis project, my intention with the camera was to replicate the experience of using a film
+                        camera, much like e-ink displays attempt to replicate the experience of paper. Therefore, I
+                        think it would be interesting to combine the two-—a digital camera that can replicate the
+                        experience of shooting with a instant camera. The device would take pictures using the Raspberry
+                        Pi camera and display it on the e-ink display. The picture would (likely) stay on the screen
+                        until the next image is captured, giving you both a sense of excitement of seeing a photo
+                        instantly, but then gives the bittersweet feeling when you realize that you would never see the photo again. Or, perhaps, the images could be stored in the device and you could view those previous images,
+                        but only on that device. The idea would be that the photos taken on the camera could only live
+                        in the camera and nowhere else, becoming a kind of time capsule.
+                    </p>
+                </div>
+            },
+            {
+                title: 'Technical Details',
+                content: <div>
+                    <div className={styles.columnWrapper}>
+                        <img src="/assets/eink_camera_00001.jpg" alt="eink camera"/>
+                        <p>
+                            The camera is built using a Raspberry Pi Zero W, a Raspberry Pi camera module, and a 2.13 inch Waveshare e-ink display. It is housed in a 3D printed case that is designed to mimic the look and feel of a Polaroid camera. The camera is powered by a 1200mAh LiPo battery, which is charged via a micro USB port. The Python script runs as soon as the Pi is powered on. It is controlled using a single button, which is used to take photos.
+                            Once the image is captured, the image takes a few seconds to appear (or "develop") and is displayed on the screen for 7 seconds before it disappears. The intention is to invoke a sense of anticipation and nostalgia, the prior being the excitement of seeing a photo develop, and the latter being the bittersweet feeling of knowing that the photo will disappear.
+                        </p>
+                        <img src="/assets/IMG_8240.jpeg" alt="eink camera"/>
+                        <img src="/assets/IMG_8241.jpeg" alt="eink camera"/>
+                    </div>
+                </div>
+            },
+            // {
+            //     title: 'Code',
+            //     content: <pre>
+            //
+            //     </pre>
+            // },
+            {
+                title: 'Final Result',
+                content: <div className={styles.columnWrapper}>
+                    <img src="/assets/eink_camera_00005.jpg" alt="eink camera"/>
+                    <img src="/assets/eink_camera_00006.jpg" alt="eink camera"/>
+                    <img src="/assets/eink_camera_00008.jpg" alt="eink camera"/>
+                    <img src="/assets/eink_camera_00009.jpg" alt="eink camera"/>
+                </div>
+            }
+        ],
+    },
     'merging-worlds': {
         name: 'Merging Worlds: bridging analog and digital photography (2023)',
         imageUrl: 'thesis_cover.jpg',
@@ -115,7 +171,8 @@ export const creativeProjects = {
                         each new endeavor.</p>
                     <video src="/assets/thesis_demo_final.mp4" controls/>
 
-                    <iframe src="https://player.vimeo.com/video/929108201?h=ace26168c7" width="100%" height="360" style={{marginTop: '50px'}}
+                    <iframe src="https://player.vimeo.com/video/929108201?h=ace26168c7" width="100%" height="360"
+                            style={{marginTop: '50px'}}
                             frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                 </div>
             },
@@ -340,10 +397,10 @@ export const creativeProjects = {
                 title: 'Final Result',
                 content: <div>
                     <div className={styles.columnWrapper}>
-                        <img src="/assets/5W3A7301.jpg" />
-                        <img src="/assets/5W3A7308.jpg" />
-                        <img src="/assets/5W3A7311.jpg" />
-                        <img src="/assets/5W3A7313.jpg" />
+                        <img src="/assets/5W3A7301.jpg"/>
+                        <img src="/assets/5W3A7308.jpg"/>
+                        <img src="/assets/5W3A7311.jpg"/>
+                        <img src="/assets/5W3A7313.jpg"/>
                     </div>
                 </div>
             }
@@ -471,8 +528,10 @@ export const creativeProjects = {
         }, {
             title: 'Technical Details',
             content: <p>
-                We used <a target="_blank" href="http://socket.io/">Socket.io</a> to integrate the realtime collaboration. For the class
-                photo gifs, Liz found the <a target="_blank" href="https://yahoo.github.io/gifshot/">Gifshot</a> library, which is an
+                We used <a target="_blank" href="http://socket.io/">Socket.io</a> to integrate the realtime
+                collaboration. For the class
+                photo gifs, Liz found the <a target="_blank"
+                                             href="https://yahoo.github.io/gifshot/">Gifshot</a> library, which is an
                 open-source library that uses your webcam to create gifs. For the book view, we used a library called <a
                 href="http://www.turnjs.com/">TurnJs</a>, another open-source library, which turns a block of html and
                 automatically puts it in a flippable book view. I imported jQuery to be able to use TurnJs, so Liz and I
@@ -498,17 +557,17 @@ export const professionalProjects = {
         imageUrl: 'processing-collab-editor.png',
         github: "https://github.com/doradocodes/processing-collab-editor",
         summary: <p>
-            With the Processing Foundation, this project is aimed to create a collaborative editor for the Processing Java library.
+            With the Processing Foundation, this project is aimed to create a collaborative editor for the Processing
+            Java library.
         </p>,
-        section: [
-
-        ]
+        section: []
     },
     'square': {
         name: 'Square',
         imageUrl: 'square_1.png',
         summary: <p>
-            At Square, I worked closely with the Marketing Creative team to implement new features and pages for the squareup.com website. Below are some of the pages I worked on.
+            At Square, I worked closely with the Marketing Creative team to implement new features and pages for the
+            squareup.com website. Below are some of the pages I worked on.
         </p>,
         sections: [{
             title: 'Campaigns',
@@ -545,22 +604,31 @@ export const professionalProjects = {
         link: <a target="_blank" href="https://www.kodakmoments.com/">Visit</a>,
         imageUrl: 'kodak_moments_1.png',
         summary: <p>
-            KodakMoments.com is a website where customers can create unique, personalized photo gifts for their loved ones. As the lead Front-end engineer, I was responsible for developing and maintaining all aspects of the website, including page layouts, product creation tools, and shopping carts. Displayed below is the flow to create a canvas print. The user uploads a photo and is taken to screen where the photo can be edited and previewed on the product. Visit this website at <a target="_blank" href="https://www.kodakmoments.com/"><b>kodakmoments.com</b></a>.
+            KodakMoments.com is a website where customers can create unique, personalized photo gifts for their loved
+            ones. As the lead Front-end engineer, I was responsible for developing and maintaining all aspects of the
+            website, including page layouts, product creation tools, and shopping carts. Displayed below is the flow to
+            create a canvas print. The user uploads a photo and is taken to screen where the photo can be edited and
+            previewed on the product. Visit this website at <a target="_blank"
+                                                               href="https://www.kodakmoments.com/"><b>kodakmoments.com</b></a>.
         </p>,
         sections: [{
             title: 'Sample Screens',
             content: <div className={styles.columnWrapper}>
                 <div>
                     <img src="/assets/kodak_moments_1.png" alt="KodakMoments.com"/>
-                    <p>The Home Page of the Kodak Moments. The user first enters the website here and is show the latest discounts and featured products.</p>
+                    <p>The Home Page of the Kodak Moments. The user first enters the website here and is show the latest
+                        discounts and featured products.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_2.png" alt="KodakMoments.com"/>
-                    <p>The Product Description Page of customized Canvas Prints. Users can see a sample of the quality of the products and can choose a size to create a print with.</p>
+                    <p>The Product Description Page of customized Canvas Prints. Users can see a sample of the quality
+                        of the products and can choose a size to create a print with.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_3.png" alt="KodakMoments.com"/>
-                    <p>The Upload page allows users to upload their desired images to the placed on the product. Users can upload as many photos as they want, and all uploaded images be saved for use on other products.</p>
+                    <p>The Upload page allows users to upload their desired images to the placed on the product. Users
+                        can upload as many photos as they want, and all uploaded images be saved for use on other
+                        products.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_4.png" alt="KodakMoments.com"/>
@@ -568,11 +636,15 @@ export const professionalProjects = {
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_5.png" alt="KodakMoments.com"/>
-                    <p>The Preview page is where users can view a 3D preview of their product and confirm their changes before adding it to their cart.</p>
+                    <p>The Preview page is where users can view a 3D preview of their product and confirm their changes
+                        before adding it to their cart.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_6.png" alt="KodakMoments.com"/>
-                    <p>Once the user adds their product to their cart, they are redirected to the Cart page. They can continue to create more products and add it to their Cart. When they are ready to purchase, they can return to this page by clicking the Card icon in the top right of the page, and continue to checkout.</p>
+                    <p>Once the user adds their product to their cart, they are redirected to the Cart page. They can
+                        continue to create more products and add it to their Cart. When they are ready to purchase, they
+                        can return to this page by clicking the Card icon in the top right of the page, and continue to
+                        checkout.</p>
                 </div>
 
             </div>
@@ -582,22 +654,30 @@ export const professionalProjects = {
         name: 'Grappling Inhouse',
         imageUrl: 'gih-1.png',
         summary: <p>
-            Grappling-InHouse.com is a social media website that lets recreational Grappling gyms create leagues, teams, and tournaments. It is a online community that brings together casual fighters who enjoy participating in competitive atmosphere. Since the intended users were had various backgrounds, I wanted to ensure there was simple and easy navigation. I wanted the design to look clean and simple to be unintimidating to users who were used to analog organization of these leagues. Visit this website at grappling-inhouse.com.
+            Grappling-InHouse.com is a social media website that lets recreational Grappling gyms create leagues, teams,
+            and tournaments. It is a online community that brings together casual fighters who enjoy participating in
+            competitive atmosphere. Since the intended users were had various backgrounds, I wanted to ensure there was
+            simple and easy navigation. I wanted the design to look clean and simple to be unintimidating to users who
+            were used to analog organization of these leagues. Visit this website at grappling-inhouse.com.
         </p>,
         sections: [{
             title: 'Sample Screens',
             content: <div className={styles.columnWrapper}>
                 <div>
                     <img src="/assets/kodak_moments_1.png" alt="KodakMoments.com"/>
-                    <p>The Home Page of the Kodak Moments. The user first enters the website here and is show the latest discounts and featured products.</p>
+                    <p>The Home Page of the Kodak Moments. The user first enters the website here and is show the latest
+                        discounts and featured products.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_2.png" alt="KodakMoments.com"/>
-                    <p>The Product Description Page of customized Canvas Prints. Users can see a sample of the quality of the products and can choose a size to create a print with.</p>
+                    <p>The Product Description Page of customized Canvas Prints. Users can see a sample of the quality
+                        of the products and can choose a size to create a print with.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_3.png" alt="KodakMoments.com"/>
-                    <p>The Upload page allows users to upload their desired images to the placed on the product. Users can upload as many photos as they want, and all uploaded images be saved for use on other products.</p>
+                    <p>The Upload page allows users to upload their desired images to the placed on the product. Users
+                        can upload as many photos as they want, and all uploaded images be saved for use on other
+                        products.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_4.png" alt="KodakMoments.com"/>
@@ -605,11 +685,15 @@ export const professionalProjects = {
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_5.png" alt="KodakMoments.com"/>
-                    <p>The Preview page is where users can view a 3D preview of their product and confirm their changes before adding it to their cart.</p>
+                    <p>The Preview page is where users can view a 3D preview of their product and confirm their changes
+                        before adding it to their cart.</p>
                 </div>
                 <div>
                     <img src="/assets/kodak_moments_6.png" alt="KodakMoments.com"/>
-                    <p>Once the user adds their product to their cart, they are redirected to the Cart page. They can continue to create more products and add it to their Cart. When they are ready to purchase, they can return to this page by clicking the Card icon in the top right of the page, and continue to checkout.</p>
+                    <p>Once the user adds their product to their cart, they are redirected to the Cart page. They can
+                        continue to create more products and add it to their Cart. When they are ready to purchase, they
+                        can return to this page by clicking the Card icon in the top right of the page, and continue to
+                        checkout.</p>
                 </div>
 
             </div>
