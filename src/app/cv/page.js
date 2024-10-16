@@ -72,12 +72,12 @@ export default function CVPage() {
         <section className={styles.section}>
             <h3 id="teaching" className={styles.sectionTitle}>Teaching</h3>
             <div className={styles.subsection}>
-                {/*<div className={styles.subsectionContent}>*/}
-                {/*    <p className={styles.kicker}>2024 - Current</p>*/}
-                {/*    <p className={styles.subsectionTitle}>Web Production 2<span className={styles.pipe}>|</span> Hunter*/}
-                {/*        College</p>*/}
-                {/*    <p>New York, NY</p>*/}
-                {/*</div>*/}
+                <div className={styles.subsectionContent}>
+                    <p className={styles.kicker}>2024 - Current</p>
+                    <p className={styles.subsectionTitle}>MEDP 33100 Web Production 2<span className={styles.pipe}>|</span> Hunter
+                        College</p>
+                    <p>New York, NY</p>
+                </div>
 
                 {/*<div className={styles.subsectionContent}>*/}
                 {/*    <p className={styles.kicker}>2024</p>*/}
