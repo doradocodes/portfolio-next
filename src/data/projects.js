@@ -23,7 +23,9 @@ export const creativeProjects = {
                         experience of shooting with a instant camera. The device would take pictures using the Raspberry
                         Pi camera and display it on the e-ink display. The picture would (likely) stay on the screen
                         until the next image is captured, giving you both a sense of excitement of seeing a photo
-                        instantly, but then gives the bittersweet feeling when you realize that you would never see the photo again. Or, perhaps, the images could be stored in the device and you could view those previous images,
+                        instantly, but then gives the bittersweet feeling when you realize that you would never see the
+                        photo again. Or, perhaps, the images could be stored in the device and you could view those
+                        previous images,
                         but only on that device. The idea would be that the photos taken on the camera could only live
                         in the camera and nowhere else, becoming a kind of time capsule.
                     </p>
@@ -35,8 +37,16 @@ export const creativeProjects = {
                     <div className={styles.columnWrapper}>
                         <img src="/assets/eink_camera_00001.jpg" alt="eink camera"/>
                         <p>
-                            The camera is built using a Raspberry Pi Zero W, a Raspberry Pi camera module, and a 2.13 inch Waveshare e-ink display. It is housed in a 3D printed case that is designed to mimic the look and feel of a Polaroid camera. The camera is powered by a 1200mAh LiPo battery, which is charged via a micro USB port. The Python script runs as soon as the Pi is powered on. It is controlled using a single button, which is used to take photos.
-                            Once the image is captured, the image takes a few seconds to appear (or "develop") and is displayed on the screen for 7 seconds before it disappears. The intention is to invoke a sense of anticipation and nostalgia, the prior being the excitement of seeing a photo develop, and the latter being the bittersweet feeling of knowing that the photo will disappear.
+                            The camera is built using a Raspberry Pi Zero W, a Raspberry Pi camera module, and a 2.13
+                            inch Waveshare e-ink display. It is housed in a 3D printed case that is designed to mimic
+                            the look and feel of a Polaroid camera. The camera is powered by a 1200mAh LiPo battery,
+                            which is charged via a micro USB port. The Python script runs as soon as the Pi is powered
+                            on. It is controlled using a single button, which is used to take photos.
+                            Once the image is captured, the image takes a few seconds to appear (or "develop") and is
+                            displayed on the screen for 7 seconds before it disappears. The intention is to invoke a
+                            sense of anticipation and nostalgia, the prior being the excitement of seeing a photo
+                            develop, and the latter being the bittersweet feeling of knowing that the photo will
+                            disappear.
                         </p>
                         <img src="/assets/IMG_8240.jpeg" alt="eink camera"/>
                         <img src="/assets/IMG_8241.jpeg" alt="eink camera"/>
@@ -555,12 +565,133 @@ export const professionalProjects = {
     'processing-collaborative-editor': {
         name: 'Processing Collaborative Editor',
         imageUrl: 'processing-collab-editor.png',
+        link: <a target="_blank" href="https://doradocodes.github.io/processing-collab-editor/">Download the app</a>,
         github: "https://github.com/doradocodes/processing-collab-editor",
         summary: <p>
-            With the Processing Foundation, this project is aimed to create a collaborative editor for the Processing
-            Java library.
+            As part of the pr05 Grant with the Processing Foundation, this project is a prototype for a new
+            collaborative code editor designed for the Processing Foundation (pr05 2024). It aims to enhance the coding
+            experience for Processing users by providing a platform for real-time collaboration.
         </p>,
-        section: []
+        sections: [{
+            title: 'Overview',
+            content: <div><p>
+                The Processing Collaborative Editor is a desktop application designed to make collaborative coding with
+                Processing accessible and engaging for students, educators, and beginners in creative coding. This
+                project emerged from the goal of bridging creative practice with technical education, allowing users to
+                create and experiment with code in real time. Processing, known for its versatility in visual arts and
+                coding education, provided the perfect foundation for this tool.</p>
+            </div>
+        },
+            {
+                title: 'Project Goals',
+                content: <div>
+                    <p>The Processing Collaborative Editor was born out of a vision to create an accessible,
+                        community-driven tool for learning and creating with Processing. This project aimed to:</p>
+                    <ul>
+                        <li>
+                            Make Code Editor Development Accessible: By using modern web technologies, we wanted
+                            developers to easily contribute and expand the editor's features, similar to how VSCode
+                            supports extension development.
+                        </li>
+                        <li>
+                            Simplify the Interface for Beginners: We designed the editor specifically for students and
+                            beginners, with a streamlined user interface that removes complexities like filesystem
+                            management, allowing students to jump straight into coding.
+                        </li>
+                        <li>
+                            Enable Real-time Collaboration: In a world where virtual collaboration is key, we sought to
+                            enable users to co-create sketches in real time, similar to tools like Google Docs or Figma.
+                        </li>
+                    </ul>
+                </div>
+            },
+            {
+                title: 'The Processing Collaborative Editor (PCE)',
+                content: <div>
+                    <p>The end result was the Processing Collaborative Editor—a desktop app for Mac and Windows that
+                        enables real-time, collaborative coding with Processing. After installation, users can jump into
+                        sketch creation immediately. Here’s a quick demo of how it works:</p>
+                    <video src="/assets/demo.mov" controls/>
+                    <b>Highlights</b>
+                    <ul>
+                        <li>
+                            Launching a Sketch: Open the app, click “play,” and start coding. As an example, let’s
+                            create a sketch that draws a circle at the mouse’s location.
+                        </li>
+                        <li>
+                            Testing and Iterating: Test the sketch by pressing the play button or using the shortcut
+                            (CMD-R on Mac).
+                        </li>
+                        <li>
+                            Collaborative Editing: When it’s time to collaborate, click “Collaborate” next to the
+                            sketch’s name. Share the Room ID with collaborators, and they can join by entering their
+                            name and ID. You’ll then see their cursors in the editor as you work together.
+                        </li>
+                        <li>
+                            Real-time Experimentation: Each collaborator can run or save the sketch independently,
+                            allowing real-time experimentation without interfering with others.
+                        </li>
+                    </ul>
+                </div>
+            },
+            {
+                title: 'Development Timeline',
+                content: <div>
+
+                </div>
+            },
+            {
+                title: 'Key Technologies',
+                content: <div>
+                    <p>
+                        Building the Processing Collaborative Editor relied on several technologies that made development fast, modular, and collaborative:
+                        <ul>
+                            <li>
+                                Electron: Using web technologies (HTML, CSS, JavaScript) to build a desktop app enabled us to reach a broad community of developers, inviting contributions to improve and expand the editor.
+                            </li>
+                            <li>
+                                React: Inside Electron, I built the UI as a React app for modularity and easy future customization.
+                            </li>
+                            <li>
+                                CodeMirror: For the code editor component, we used CodeMirror 6, which offers a rich, adaptable editing experience.
+                            </li>
+                            <li>
+                                Y.js: The backbone of our real-time collaboration, Y.js enabled seamless multi-user editing by handling complex merge logic, with connections managed by a WebSocket server on Render.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            },
+            {
+                title: 'Future Vision & Impact',
+                content: <div>
+                    <p>Looking ahead, the Processing Collaborative Editor has endless potential. Some features I’d love to add include:</p>
+                    <ul>
+                        <li>
+                            Library Imports: An easy way to import the wealth of existing Processing libraries.
+                        </li>
+                        <li>
+                            Peer-to-peer Collaboration with WebRTC: Reduced latency and enhanced data privacy for a more connected experience.
+                        </li>
+                        <li>
+                            Classroom Integration: Bringing the editor into classrooms to gather feedback from students and educators.
+                        </li>
+                    </ul>
+                    <p>I’m excited to see where this tool could go and hope others will contribute their ideas—please feel free to submit feature requests on GitHub!</p>
+                </div>
+            },
+            {
+                title: 'Learnings',
+                content: <div>
+
+                </div>
+            },
+            {
+                title: 'Acknowledgements',
+                content: <div>
+                </div>
+            }
+        ]
     },
     'square': {
         name: 'Square',
