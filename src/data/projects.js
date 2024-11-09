@@ -781,53 +781,53 @@ export const professionalProjects = {
             </div>
         }],
     },
-    'grappling-inhouse': {
-        name: 'Grappling Inhouse',
-        imageUrl: 'gih-1.png',
-        summary: <p>
-            Grappling-InHouse.com is a social media website that lets recreational Grappling gyms create leagues, teams,
-            and tournaments. It is a online community that brings together casual fighters who enjoy participating in
-            competitive atmosphere. Since the intended users were had various backgrounds, I wanted to ensure there was
-            simple and easy navigation. I wanted the design to look clean and simple to be unintimidating to users who
-            were used to analog organization of these leagues. Visit this website at grappling-inhouse.com.
-        </p>,
-        sections: [{
-            title: 'Sample Screens',
-            content: <div className={styles.columnWrapper}>
-                <div>
-                    <img src="/assets/kodak_moments_1.png" alt="KodakMoments.com"/>
-                    <p>The Home Page of the Kodak Moments. The user first enters the website here and is show the latest
-                        discounts and featured products.</p>
-                </div>
-                <div>
-                    <img src="/assets/kodak_moments_2.png" alt="KodakMoments.com"/>
-                    <p>The Product Description Page of customized Canvas Prints. Users can see a sample of the quality
-                        of the products and can choose a size to create a print with.</p>
-                </div>
-                <div>
-                    <img src="/assets/kodak_moments_3.png" alt="KodakMoments.com"/>
-                    <p>The Upload page allows users to upload their desired images to the placed on the product. Users
-                        can upload as many photos as they want, and all uploaded images be saved for use on other
-                        products.</p>
-                </div>
-                <div>
-                    <img src="/assets/kodak_moments_4.png" alt="KodakMoments.com"/>
-                    <p>The Editing page is where users can crop, rotate, or apply filters to their photos.</p>
-                </div>
-                <div>
-                    <img src="/assets/kodak_moments_5.png" alt="KodakMoments.com"/>
-                    <p>The Preview page is where users can view a 3D preview of their product and confirm their changes
-                        before adding it to their cart.</p>
-                </div>
-                <div>
-                    <img src="/assets/kodak_moments_6.png" alt="KodakMoments.com"/>
-                    <p>Once the user adds their product to their cart, they are redirected to the Cart page. They can
-                        continue to create more products and add it to their Cart. When they are ready to purchase, they
-                        can return to this page by clicking the Card icon in the top right of the page, and continue to
-                        checkout.</p>
-                </div>
-
-            </div>
-        }],
-    },
+    // 'grappling-inhouse': {
+    //     name: 'Grappling Inhouse',
+    //     imageUrl: 'gih-1.png',
+    //     summary: <p>
+    //         Grappling-InHouse.com is a social media website that lets recreational Grappling gyms create leagues, teams,
+    //         and tournaments. It is a online community that brings together casual fighters who enjoy participating in
+    //         competitive atmosphere. Since the intended users were had various backgrounds, I wanted to ensure there was
+    //         simple and easy navigation. I wanted the design to look clean and simple to be unintimidating to users who
+    //         were used to analog organization of these leagues. Visit this website at grappling-inhouse.com.
+    //     </p>,
+    //     sections: [{
+    //         title: 'Sample Screens',
+    //         content: <div className={styles.columnWrapper}>
+    //             <div>
+    //                 <img src="/assets/kodak_moments_1.png" alt="KodakMoments.com"/>
+    //                 <p>The Home Page of the Kodak Moments. The user first enters the website here and is show the latest
+    //                     discounts and featured products.</p>
+    //             </div>
+    //             <div>
+    //                 <img src="/assets/kodak_moments_2.png" alt="KodakMoments.com"/>
+    //                 <p>The Product Description Page of customized Canvas Prints. Users can see a sample of the quality
+    //                     of the products and can choose a size to create a print with.</p>
+    //             </div>
+    //             <div>
+    //                 <img src="/assets/kodak_moments_3.png" alt="KodakMoments.com"/>
+    //                 <p>The Upload page allows users to upload their desired images to the placed on the product. Users
+    //                     can upload as many photos as they want, and all uploaded images be saved for use on other
+    //                     products.</p>
+    //             </div>
+    //             <div>
+    //                 <img src="/assets/kodak_moments_4.png" alt="KodakMoments.com"/>
+    //                 <p>The Editing page is where users can crop, rotate, or apply filters to their photos.</p>
+    //             </div>
+    //             <div>
+    //                 <img src="/assets/kodak_moments_5.png" alt="KodakMoments.com"/>
+    //                 <p>The Preview page is where users can view a 3D preview of their product and confirm their changes
+    //                     before adding it to their cart.</p>
+    //             </div>
+    //             <div>
+    //                 <img src="/assets/kodak_moments_6.png" alt="KodakMoments.com"/>
+    //                 <p>Once the user adds their product to their cart, they are redirected to the Cart page. They can
+    //                     continue to create more products and add it to their Cart. When they are ready to purchase, they
+    //                     can return to this page by clicking the Card icon in the top right of the page, and continue to
+    //                     checkout.</p>
+    //             </div>
+    //
+    //         </div>
+    //     }],
+    // },
 }

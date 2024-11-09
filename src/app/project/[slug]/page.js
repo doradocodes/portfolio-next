@@ -23,16 +23,16 @@ export default function ProjectsPage({ params }) {
                     <img className={styles.projectImage} src={`/assets/${project.imageUrl}`} alt={project.title}/>
                 </div>
             </div>
-            <section className={styles.tableOfContents}>
-                <h2 className={styles.sectionTitle}>Table of contents</h2>
-                {project.sections?.map((section, i) =>
-                    <a key={i} href={`#${
-                        section.title.toLowerCase().replace(/\s/g, '-')
-                    }`}>{section.title}</a>)
-                }
-            </section>
+            {project.sections.length > 0 &&
+                <section className={styles.tableOfContents}>
+                    <h2 className={styles.sectionTitle}>Table of contents</h2>
+                    {project.sections?.filter(section => section.title).map((section, i) =>
+                        <a key={i} href={`#${section.title.toLowerCase().replace(/\s/g, '-')}`}>{section.title}</a>)
+                    }
+                </section>
+            }
             {project.sections?.map((section, i) =>
-                <section key={i} className={styles.section} id={section.title.toLowerCase().replace(/\s/g, '-')}>
+                <section key={i} className={styles.section} id={section.title && section.title.toLowerCase().replace(/\s/g, '-')}>
                     <h2 className={styles.sectionTitle}>{section.title}</h2>
                     {section.content}
                 </section>)
