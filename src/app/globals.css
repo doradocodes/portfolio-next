@@ -4,7 +4,7 @@
   --font-color: #6C6C6C;
   --font-color-header: #444444;
   --background-color: #F5F5F7;
-  --border-color: #8a8a8a;
+  --border-color: #e5e4e4;
   --mobile-breakpoint: 768px;
   --display-font: "VT323", monospace;
   --body-font: "Inconsolata", monospace;
@@ -79,9 +79,9 @@ img {
   display: none;
 }
 
-.border {
-  padding: 1rem;
-}
+/*.border {*/
+/*  padding: 1rem;*/
+/*}*/
 
 @media print {
   .no-print, .no-print * {
@@ -101,6 +101,9 @@ img {
 }
 
 .page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .page .content p {

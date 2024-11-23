@@ -1,8 +1,9 @@
 import styles from "./page.module.css";
+import classNames from "classnames";
 
 export default function About() {
-    return <div className={styles.wrapper}>
-        <img className={styles.profileImage} src="Dora_Do1_small.jpg" alt="Dora Do profile picture"/>
+    return <div className={classNames('page', styles.wrapper)}>
+        <img className={styles.profileImage} src="Dora_Do1_small 2.jpg" alt="Dora Do profile picture"/>
         <p>
             Dora Do is a Creative Technologist, artist, and educator based in Brooklyn, NY, exploring the intersection of technology and art.
             Born and raised in Silicon Valley, Dora developed a deep passion for both fields from an early age. Starting

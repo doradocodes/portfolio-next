@@ -4,7 +4,7 @@ import {workExperience} from "@/data/cv";
 import classNames from "classnames";
 
 export default function CVPage() {
-    return <div className={classNames(styles.page)}>
+    return <div className={classNames('page', styles.page)}>
         {/*<Subnav*/}
         {/*    items={[*/}
         {/*        {id: 'work-experience', name: 'Work Experience'},*/}

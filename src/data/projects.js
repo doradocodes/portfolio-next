@@ -693,8 +693,8 @@ export const professionalProjects = {
             }
         ]
     },
-    'square': {
-        name: 'Square',
+    'square-marketing': {
+        name: 'Square Marketing',
         imageUrl: 'square_1.png',
         summary: <p>
             At Square, I worked closely with the Marketing Creative team to implement new features and pages for the
@@ -727,6 +727,19 @@ export const professionalProjects = {
                     <img src="/assets/square-6.png" alt="Squareup.com"/>
                     <a target="_blank" href="https://squareup.com/us/en/compare">View</a>
                 </div>
+            </div>
+        }],
+    },
+    'square-web-payments': {
+        name: 'Square Web Payments SDK',
+        imageUrl: 'card-payment-method-web-page.webp',
+        summary: <p>
+            At Square, I worked on the Web Payments team, where we developed and maintained the Square Web Payments SDK, a JavaScript library that allows developers to integrate Square payments into their websites. I was responsible for implementing new features, fixing bugs, and writing documentation for the SDK.
+        </p>,
+        sections: [{
+            title: 'Web Payments SDK',
+            content: <div className={styles.columnWrapper}>
+
             </div>
         }],
     },

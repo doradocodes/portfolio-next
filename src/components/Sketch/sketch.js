@@ -61,3 +61,33 @@ export const sketch1 = (p5) => {
         return img
     }
 };
+
+export const sketch2 = (p5) =>  {
+    let video;
+
+    p5.setup = () => {
+        p5.createCanvas(256, 256).parent(canvasRef.current);
+
+        video = p5.createCapture(p5.VIDEO);
+        video.size(p5.width, p5.height);
+        video.hide();
+    }
+
+    p5.draw = () => {
+        p5.background(0);
+        p5.fill(0, 200, 0);
+        let gridSize = 20;
+        video.loadPixels();
+        for (let y = 0; y < video.height; y += gridSize) {
+            for (let x = 0; x < video.width; x += gridSize) {
+                let index = (x + y * video.width) * 4;
+                let r = video.pixels[index];
+                if (r > 50) {
+                    p5.text('1', x, y)
+                } else {
+                    p5.text('0', x, y)
+                }
+            }
+        }
+    }
+};
