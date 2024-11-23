@@ -51,7 +51,7 @@ function Scene({ mousePosition }) {
     return <>
         <OrthographicCamera
             makeDefault // Sets this camera as the active camera
-            position={[1,1,1]}
+            position={[1,1,3]}
             zoom={100} // Adjust zoom level
             near={0.1}
             far={1000}
