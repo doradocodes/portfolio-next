@@ -8,7 +8,7 @@ export default function Header() {
         <div className={styles.info}>
             <h1>Dora Do</h1>
             {/*<h2>Creative Technologist</h2>*/}
-            <h2 className={styles.subtitle}>art / design / technology</h2>
+            <h2 className={styles.subtitle}>creative technology / design / engineering</h2>
             <p>I am a Creative Technologist based in NYC. I create a wide variety of immersive, intentional (things)
                 with
                 technology.</p>
