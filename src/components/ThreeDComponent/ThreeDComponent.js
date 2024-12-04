@@ -22,7 +22,7 @@ export default function ThreeDComponent() {
     return (
         <div
             ref={containerRef}
-            onMouseMove={(e) => handleMouseMove(e)}
+            // onMouseMove={(e) => handleMouseMove(e)}
         >
             <ThreeCanvas style={{ height: '60vh'}}>
                 <Scene mousePosition={mousePosition}/>
@@ -34,19 +34,19 @@ export default function ThreeDComponent() {
 function Scene({ mousePosition }) {
     const meshRef = useRef();
 
-    useFrame(() => {
-        if (meshRef.current) {
-            let targetX = mousePosition.y * Math.PI * 0.1; // Limit to ±0.1 * Math.PI
-            let targetY = mousePosition.x * Math.PI * 0.1; // Limit to ±0.1 * Math.PI
-
-            meshRef.current.rotation.x += (targetX - meshRef.current.rotation.x) * 0.1;
-            meshRef.current.rotation.y += (targetY - meshRef.current.rotation.y) * 0.1;
-
-            // Clamp rotation values
-            meshRef.current.rotation.x = Math.max(-Math.PI * 0.2, Math.min(Math.PI * 0.2, meshRef.current.rotation.x));
-            meshRef.current.rotation.y = Math.max(-Math.PI * 0.2, Math.min(Math.PI * 0.2, meshRef.current.rotation.y));
-        }
-    });
+    // useFrame(() => {
+    //     if (meshRef.current) {
+    //         let targetX = mousePosition.y * Math.PI * 0.1; // Limit to ±0.1 * Math.PI
+    //         let targetY = mousePosition.x * Math.PI * 0.1; // Limit to ±0.1 * Math.PI
+    //
+    //         meshRef.current.rotation.x += (targetX - meshRef.current.rotation.x) * 0.1;
+    //         meshRef.current.rotation.y += (targetY - meshRef.current.rotation.y) * 0.1;
+    //
+    //         // Clamp rotation values
+    //         meshRef.current.rotation.x = Math.max(-Math.PI * 0.2, Math.min(Math.PI * 0.2, meshRef.current.rotation.x));
+    //         meshRef.current.rotation.y = Math.max(-Math.PI * 0.2, Math.min(Math.PI * 0.2, meshRef.current.rotation.y));
+    //     }
+    // });
 
     return <>
         <OrthographicCamera

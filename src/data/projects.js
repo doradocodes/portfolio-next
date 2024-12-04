@@ -580,6 +580,19 @@ export const professionalProjects = {
                 project emerged from the goal of bridging creative practice with technical education, allowing users to
                 create and experiment with code in real time. Processing, known for its versatility in visual arts and
                 coding education, provided the perfect foundation for this tool.</p>
+
+                <iframe
+                    style={{
+                        width: '100%',
+                        height: '500px',
+                        maxWidth: '800px',
+                        margin: '2em auto',
+                        display: 'block',
+                    }}
+                    src="https://www.youtube.com/embed/AxV3lhJCh2k?si=6zql8Xr9WW6yBFf3&amp;start=5602"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         },
             {
