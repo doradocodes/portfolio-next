@@ -7,8 +7,8 @@ import Nav from "@/components/Nav/Nav";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
-    title: "Dora Do - Creative Technologist",
-    description: "Dora Do is a creative technologist based in New York City. She is passionate about creating interactive experiences that are both engaging and accessible.",
+    title: "Dora Do - Design / Engineering",
+    description: "Dora Do is a design technologist based in New York City. She is passionate about creating interactive experiences that are both engaging and accessible.",
 };
 
 export default function RootLayout({children}) {
