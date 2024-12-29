@@ -1,121 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 :root {
-  --font-color: #6C6C6C;
-  --font-color-header: #444444;
-  --background-color: #F5F5F7;
-  --border-color: #e5e4e4;
-  --mobile-breakpoint: 768px;
-  --display-font: "VT323", monospace;
-  --body-font: "Inconsolata", monospace;
+    --font-color: #6C6C6C;
+    --font-color-header: #444444;
+    --background-color: #F5F5F7;
+    --border-color: #e5e4e4;
+    --mobile-breakpoint: 768px;
+    --display-font: "VT323", monospace;
+    --body-font: "Inconsolata", monospace;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html,
 body {
-  height: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
+    height: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 
 }
 
 body {
-  background: var(--background-color);
-  font-size: 16px;
-  line-height: 125%;
-  color: var(--font-color);
-  scroll-behavior: smooth;
+    background: var(--background-color);
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--font-color);
+    scroll-behavior: smooth;
 
-  font-family: var(--body-font) !important;
-  font-weight: 400;
-  font-style: normal;
+    font-family: var(--body-font) !important;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 2em;
-  font-weight: 600;
-  color: var(--font-color-header);
-  font-family: var(--display-font) !important;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--font-color-header);
+    font-family: var(--display-font) !important;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-  transition: ease-in-out 0.2s;
-  font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+    font-weight: bold;
 }
 
 a:hover {
-  color: #2448ff;
+    color: #2448ff;
 }
 
 a[target="_blank"]::after {
-  content: '↗';
-  font-size: 0.5em;
-  vertical-align: super;
+    content: '↗';
+    font-size: 0.5em;
+    vertical-align: super;
 }
 
 video {
-  width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
-  display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: block;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
-/*p {*/
-/*  margin: 1rem 0;*/
-/*}*/
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-family: inherit;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background: var(--font-color-header);
+    outline: none;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.5;
+}
 
 .display-print, .display-print * {
-  display: none;
+    display: none;
 }
 
-/*.border {*/
-/*  padding: 1rem;*/
-/*}*/
-
 @media print {
-  .no-print, .no-print * {
-    display: none !important;
-  }
-  .display-print, .display-print * {
-    display: block !important;
-  }
+    .no-print, .no-print * {
+        display: none !important;
+    }
+
+    .display-print, .display-print * {
+        display: block !important;
+    }
 }
 
 .subnav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  list-style: none;
-  padding: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0 0 1rem 0;
 }
 
 .page {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .page .content p {
-  /*margin: 1rem 0;*/
+    /*margin: 1rem 0;*/
 }
 
 .page .content ul {
-  margin: 0 1.5rem;
+    margin: 0 1.5rem;
 }
 
 .react-p5-wrapper canvas {
-  width: 100% !important;
-  /*height: 100% !important;*/
+    width: 100% !important;
+    /*height: 100% !important;*/
 
 }
