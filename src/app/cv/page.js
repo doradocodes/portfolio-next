@@ -79,11 +79,11 @@ export default function CVPage() {
                     <p>New York, NY</p>
                 </div>
 
-                {/*<div className={styles.subsectionContent}>*/}
-                {/*    <p className={styles.kicker}>2024</p>*/}
-                {/*    <p className={styles.subsectionTitle}>Interactive Web: Intro to HTML, CSS, and JavaScript<span className={styles.pipe}>|</span> SVA</p>*/}
-                {/*    <p>New York, NY</p>*/}
-                {/*</div>*/}
+                <div className={styles.subsectionContent}>
+                    <p className={styles.kicker}>2024</p>
+                    <p className={styles.subsectionTitle}>Interactive Web: Intro to HTML, CSS, and JavaScript<span className={styles.pipe}>|</span> School of Visual Arts</p>
+                    <p>New York, NY</p>
+                </div>
 
                 <div className={styles.subsectionContent}>
                     <p className={styles.kicker}>2023 - 2024</p>
