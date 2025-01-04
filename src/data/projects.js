@@ -76,7 +76,7 @@ export const creativeProjects = {
         summary: <p>Inspired by my personal experiences as a software engineer and analog photographer, this project is
             a personally crafted camera that blends the tactile charm of analog photography with discreet incorporation
             of digital features.</p>,
-        link: <a target="_blank" href='https://dd3368-thesis.glitch.me/'>Demo</a>,
+        link: <a target="_blank" href='https://merging-worlds.onrender.com/'>Demo</a>,
         sections: [
             {
                 content: <div>
