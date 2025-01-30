@@ -32,25 +32,25 @@ export default function ContactPage() {
             </p>
         </div>
 
-        <form className={styles.form} onSubmit={handleFormSubmit} name="contact">
-            <div className={styles.formRow}>
-                <label>Name</label>
-                <input type="text" name="name" placeholder="Enter your name" required/>
-            </div>
-            <div className={styles.formRow}v>
-                <label>
-                    Email
-                </label>
-                <input type="email" name="email" placeholder="Enter your email address" required/>
-            </div>
-            <div className={styles.formRow}>
-                <label>
-                    Message
-                </label>
-                <textarea rows={10} name="message" placeholder="Enter your message" required/>
-            </div>
-            <p>{formMessage}</p>
-            <button type="submit">Send</button>
-        </form>
+        {/*<form className={styles.form} onSubmit={handleFormSubmit} name="contact">*/}
+        {/*    <div className={styles.formRow}>*/}
+        {/*        <label>Name</label>*/}
+        {/*        <input type="text" name="name" placeholder="Enter your name" required/>*/}
+        {/*    </div>*/}
+        {/*    <div className={styles.formRow}v>*/}
+        {/*        <label>*/}
+        {/*            Email*/}
+        {/*        </label>*/}
+        {/*        <input type="email" name="email" placeholder="Enter your email address" required/>*/}
+        {/*    </div>*/}
+        {/*    <div className={styles.formRow}>*/}
+        {/*        <label>*/}
+        {/*            Message*/}
+        {/*        </label>*/}
+        {/*        <textarea rows={10} name="message" placeholder="Enter your message" required/>*/}
+        {/*    </div>*/}
+        {/*    <p>{formMessage}</p>*/}
+        {/*    <button type="submit">Send</button>*/}
+        {/*</form>*/}
     </div>
 }
