@@ -15,7 +15,7 @@ export default function ContactPage() {
             </p>
         </div>
 
-        <form className={styles.form} netlify>
+        <form className={styles.form} data-netlify="true" name="contact">
             <div className={styles.formRow}>
                 <label>Name</label>
                 <input type="text" name="name" placeholder="Enter your name" required/>
